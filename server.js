@@ -27,8 +27,6 @@ app.use(passport.initialize());
 //Passport config
 require('./config/passport')(passport)
 
-//Let's write our first route
-app.get('/', (req,res) => res.send('Hello!'));
 
 app.use('/api/users', users);
 app.use('/api/profile', profile);
